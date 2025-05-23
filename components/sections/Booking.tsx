@@ -1,5 +1,6 @@
 import { services } from '../../src/data/mockData';
 import ImageWithFallback from '../ImageWithFallback';
+import { bookingImage } from '../../src/utils/imagePlaceholders';
 
 export default function Booking() {
   return (
@@ -13,7 +14,7 @@ export default function Booking() {
           <div className="hidden md:block relative">
             <div className="relative h-[600px] rounded-2xl overflow-hidden">
               <ImageWithFallback 
-                src="/images/booking-image.jpg"
+                src={bookingImage}
                 alt="Tranquil spa setting"
                 fill
               />

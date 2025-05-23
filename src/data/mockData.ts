@@ -1,24 +1,26 @@
+import { productImages, testimonialAvatars } from '../utils/imagePlaceholders';
+
 export const testimonials = [
   {
     id: 1,
     name: "Sarah Johnson",
     role: "Yoga Enthusiast",
     quote: "Tranquil Haven has completely transformed my wellness journey. The serene environment and expert therapists helped me find balance and inner peace. Highly recommended!",
-    avatar: "/images/testimonial-1.jpg"
+    avatar: testimonialAvatars.female1
   },
   {
     id: 2,
     name: "Michael Chen",
     role: "Executive",
     quote: "After months of stress and burnout, my weekend retreat at Tranquil Haven was exactly what I needed. The mindfulness sessions and massage therapy were exceptional.",
-    avatar: "/images/testimonial-2.jpg"
+    avatar: testimonialAvatars.male1
   },
   {
     id: 3,
     name: "Emma Rodriguez",
     role: "Wellness Coach",
     quote: "As someone in the wellness industry, I have high standards, and Tranquil Haven exceeds them all. Their holistic approach to wellness is unmatched in the industry.",
-    avatar: "/images/testimonial-3.jpg"
+    avatar: testimonialAvatars.female2
   }
 ];
 
@@ -28,21 +30,21 @@ export const products = [
     name: "Tranquility Essential Oil Blend",
     description: "A soothing blend of lavender, chamomile, and bergamot to promote relaxation and stress relief.",
     price: 29.99,
-    image: "/images/product-1.jpg"
+    image: productImages.essentialOil
   },
   {
     id: 2,
     name: "Himalayan Salt Bath Soak",
     description: "Hand-harvested pink Himalayan salt infused with essential oils for a rejuvenating bath experience.",
     price: 24.99,
-    image: "/images/product-2.jpg"
+    image: productImages.bathSoak
   },
   {
     id: 3,
     name: "Meditation Cushion Set",
     description: "Ergonomically designed meditation cushion and mat made with organic cotton and natural fillings.",
     price: 59.99,
-    image: "/images/product-3.jpg"
+    image: productImages.meditationCushion
   }
 ];
 

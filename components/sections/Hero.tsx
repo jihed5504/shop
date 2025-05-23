@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import ImageWithFallback from '../ImageWithFallback';
+import { heroBackground } from '../../src/utils/imagePlaceholders';
 
 export default function Hero() {
   return (
@@ -10,7 +11,7 @@ export default function Hero() {
       {/* Background image */}
       <div className="absolute inset-0 z-0">
         <ImageWithFallback 
-          src="/images/hero-bg.jpg" 
+          src={heroBackground}
           alt="Tranquil setting with plants and meditation space"
           fill
           priority

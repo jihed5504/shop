@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
+import { placeholderImage } from '../src/utils/imagePlaceholders';
 
 type ImageWithFallbackProps = {
   src: string;
@@ -17,7 +18,7 @@ type ImageWithFallbackProps = {
 export default function ImageWithFallback({
   src,
   alt,
-  fallbackSrc = "/images/placeholder.jpg",
+  fallbackSrc = placeholderImage,
   fill = false,
   width,
   height,
@@ -39,8 +40,11 @@ export default function ImageWithFallback({
           height={!fill ? height : undefined}
           priority={priority}
           onError={() => {
-            setImgSrc(fallbackSrc);
-            setHasError(true);
+            if (imgSrc !== fallbackSrc) {
+              setImgSrc(fallbackSrc);
+            } else {
+              setHasError(true);
+            }
           }}
           className={`${fill ? 'object-cover' : ''}`}
           {...rest}
