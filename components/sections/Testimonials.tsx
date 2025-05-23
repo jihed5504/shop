@@ -27,12 +27,12 @@ export default function Testimonials() {
             >
               {/* Quote mark decoration */}
               <div className="absolute text-8xl font-serif text-primary/10 -top-2 -left-2 leading-none">
-                "
+                &ldquo;
               </div>
               
               <div className="relative z-10 flex-1">
                 <p className="text-foreground/80 italic mb-8 text-lg">
-                  "{testimonial.quote}"
+                  &ldquo;{testimonial.quote}&rdquo;
                 </p>
                 
                 <div className="flex items-center mt-auto">

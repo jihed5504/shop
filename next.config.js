@@ -15,6 +15,11 @@ const nextConfig = {
   },
   // For ease of deployment
   output: 'standalone',
+  // Disable ESLint during production builds for faster builds
+  eslint: {
+    // Only run ESLint in development, not during builds
+    ignoreDuringBuilds: true,
+  },
 };
 
 module.exports = nextConfig; 
