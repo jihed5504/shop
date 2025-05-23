@@ -1,9 +1,10 @@
 {
-  "name": "wellness-site",
-  "version": "0.1.0",
+  "name": "tranquil-haven",
+  "version": "1.0.0",
   "private": true,
+  "description": "A tranquil wellness retreat website",
   "scripts": {
-    "dev": "next dev --turbopack",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"

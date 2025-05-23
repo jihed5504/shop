@@ -1,36 +1,61 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Tranquil Haven - Wellness Retreat Website
+
+A fully responsive one-page wellness website built using modern web technologies. The design is tranquil, elegant, minimal, and warm—resembling a luxury wellness retreat brochure.
+
+## Features
+
+- **Hero Section**: A calming background with logo placeholder and welcoming CTA
+- **Booking Form**: Mock booking system with name, date, service selection
+- **Online Shop**: Sample wellness products displayed in cards
+- **Testimonials**: Client experiences and quotes
+- **Responsive Design**: Fully responsive across all device sizes
+- **Modern UI**: Clean, minimal design with smooth transitions
+
+## Tech Stack
+
+- **Next.js**: React framework for production
+- **TypeScript**: For type safety
+- **Tailwind CSS**: For styling
+- **Vercel**: Deployment platform
 
 ## Getting Started
 
-First, run the development server:
+1. Clone the repository
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Run the development server:
+   ```bash
+   npm run dev
+   ```
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Deployment
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This project is configured for easy deployment on Vercel:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Push your code to a GitHub repository
+2. Import the project in Vercel
+3. Deploy
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Project Structure
 
-## Learn More
+- `/components`: UI components
+  - `/sections`: Page sections (Hero, Booking, Shop, etc.)
+- `/public`: Static assets
+  - `/images`: Images and SVGs
+- `/src`: Source code
+  - `/app`: Next.js app directory
+  - `/data`: Mock data
 
-To learn more about Next.js, take a look at the following resources:
+## Customization
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The website uses a modular approach for easy customization:
+- Color scheme can be modified in `src/app/globals.css`
+- Mock data can be updated in `src/data/mockData.ts`
+- Component sections can be individually modified
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## License
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is MIT licensed.

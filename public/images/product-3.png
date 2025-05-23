@@ -1,0 +1,6 @@
+<svg width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="400" fill="#f8f5f1"/>
+  <rect x="100" y="100" width="200" height="200" rx="20" fill="#6b9080"/>
+  <rect x="120" y="120" width="160" height="160" rx="10" fill="#a4c3b2"/>
+  <text x="200" y="300" font-family="Arial" font-size="24" fill="#3d4b4e" text-anchor="middle">Meditation Cushion</text>
+</svg> 
