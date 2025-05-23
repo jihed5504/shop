@@ -3,18 +3,5 @@
   "devCommand": "next dev",
   "installCommand": "npm install",
   "framework": "nextjs",
-  "outputDirectory": ".next",
-  "images": {
-    "domains": [
-      "images.unsplash.com",
-      "randomuser.me"
-    ],
-    "formats": ["image/avif", "image/webp"],
-    "remotePatterns": [
-      {
-        "protocol": "https",
-        "hostname": "**"
-      }
-    ]
-  }
+  "outputDirectory": ".next"
 } 
