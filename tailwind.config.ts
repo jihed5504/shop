@@ -21,6 +21,20 @@ export default {
       fontFamily: {
         sans: ["var(--font-family)"],
       },
+      keyframes: {
+        float: {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-10px)' },
+        }
+      },
+      animation: {
+        'float-slow': 'float 8s ease-in-out infinite',
+        'float-medium': 'float 6s ease-in-out infinite',
+        'float-fast': 'float 4s ease-in-out infinite',
+      },
+      backgroundImage: {
+        'wave-pattern': "url('/images/wave-pattern.svg')",
+      }
     },
   },
   plugins: [],
